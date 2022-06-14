@@ -1,0 +1,24 @@
+{
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-exif": "*",
+        "ext-mbstring": "*",
+        "stefangabos/zebra_image": "^2.7"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.3.0"
+        },
+        "platform-check": true,
+        "sort-packages": true
+    },
+    "scripts": {
+      "post-install-cmd": [
+        "@php -r \"array_map('unlink', glob('vendor/stefangabos/zebra_image/examples/images/*'));\"",
+        "@php -r \"rmdir('vendor/stefangabos/zebra_image/examples/images/');\"",
+        "@php -r \"array_map('unlink', glob('vendor/stefangabos/zebra_image/examples/*'));\"",
+        "@php -r \"rmdir('vendor/stefangabos/zebra_image/examples');\""
+      ]
+    }
+}

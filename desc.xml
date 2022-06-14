@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="nextcloudconnector" version="0.1" active="1">
+  <author>Jeremy Dufraisse</author>
+  <label>New Image Lib</label>
+  <desc>Utilisation d'une nouvelle librairie pour les images</desc>
+</plugin>
